@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body,
+.container{
+    height: 100%;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 0vh 20vw;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+
+.game{
+
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr) ;
+    border :2px solid black;
+
+}
+
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    border: 5px solid black;
+
+}
+
+.game-screen {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 5em;
+
+    border :2px solid black;
+    border-bottom: none;
+    
+
+}
+
+.start-game {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    width: 6em;
+    height: 3em;
+
+    font-size: 30px;
+
+    
+}
+
+.restart-game {
+    position: absolute;
+    top:50%;
+    left: 40%;
+    width: 6em;
+    height: 3em;
+
+    font-size: 30px;
+
+    
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
